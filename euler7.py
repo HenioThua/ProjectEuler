@@ -17,9 +17,9 @@ def erastoteles_sieve(g):
 g = erastoteles_sieve(gerador())
 cont = 1
 for i in g:
-    if cont == 10001:
+    if cont == 2000000:
+        cont +=1
         print(i)
-        break
-    cont +=1 
+        
 
     

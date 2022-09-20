@@ -16,4 +16,18 @@ def def_perf_abund(n):
     elif valor > n:
         return ABUNDANTE
     else:
-        return DEFICIENTE             
+        return DEFICIENTE
+numeros_abundantes = []
+def is_abundante(x):
+    if def_perf_abund(x) == ABUNDANTE:
+        numeros_abundantes.append(x)
+    return numeros_abundantes
+
+for i in range(1,28124):
+    is_abundante(i)
+    
+print(is_abundante(i))
+    
+
+        
+    
